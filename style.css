@@ -10,15 +10,12 @@ body{
 }
 
 /* الصفحات */
-
 .page{
   width:100%;
   height:100vh;
   display:none;
-
   justify-content:center;
   align-items:center;
-
   flex-direction:column;
 }
 
@@ -26,8 +23,7 @@ body{
   display:flex;
 }
 
-/* الصفحة الاولى */
-
+/* صفحة الباسورد */
 #loginPage{
   background:white;
 }
@@ -35,108 +31,113 @@ body{
 #loginPage h1{
   font-size:40px;
   margin-bottom:25px;
+  text-align:center;
 }
 
 #loginPage input{
-
   width:300px;
-
   padding:15px;
-
   border-radius:12px;
-
   border:2px solid #ccc;
-
   font-size:18px;
-
   text-align:center;
 }
 
 #loginPage button{
-
   margin-top:20px;
-
   padding:12px 30px;
-
   border:none;
-
   border-radius:12px;
-
   background:black;
-
   color:white;
-
   font-size:18px;
-
   cursor:pointer;
 }
 
 /* الصفحة التانية */
-
 #mainPage{
-
   background:#1a002e;
-
   color:white;
 }
 
 #mainPage h2{
-
   font-size:55px;
-
   margin-bottom:40px;
-
   text-align:center;
 }
 
-/* الصور */
-
+/* السلايدر */
 .slider{
-
   display:flex;
-
   align-items:center;
-
   gap:20px;
 }
 
 .slider img{
-
   width:350px;
-
   height:450px;
-
   object-fit:cover;
-
   border-radius:25px;
-
   box-shadow:0 0 25px rgba(255,255,255,0.2);
 }
 
 .nav{
-
   width:60px;
-
   height:60px;
-
   border:none;
-
   border-radius:50%;
-
   font-size:30px;
-
   cursor:pointer;
-
   background:white;
-
   color:black;
 }
 
-/* الاغنية */
-
+/* الصوت */
 audio{
-
   margin-top:40px;
-
   width:350px;
+}
+
+/* ====== موبايل ====== */
+@media (max-width: 768px){
+
+  #loginPage h1{
+    font-size:24px;
+    padding:0 10px;
+  }
+
+  #loginPage input{
+    width:90%;
+    font-size:16px;
+  }
+
+  #loginPage button{
+    width:60%;
+    font-size:16px;
+  }
+
+  #mainPage h2{
+    font-size:28px;
+    padding:0 10px;
+  }
+
+  .slider{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .slider img{
+    width:90%;
+    height:300px;
+  }
+
+  .nav{
+    width:50px;
+    height:50px;
+    font-size:24px;
+  }
+
+  audio{
+    width:90%;
+  }
 }
