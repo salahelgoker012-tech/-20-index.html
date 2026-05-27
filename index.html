@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اخوات لآخر العمر</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- صفحة الباسورد -->
+
+  <div id="loginPage" class="page active">
+
+    <h1>اكتب الباسورد يقلب اخوك 😂</h1>
+
+    <input type="password" id="password" placeholder="اكتب هنا">
+
+    <button onclick="checkPassword()">دخول</button>
+
+  </div>
+
+  <!-- الصفحة التانية -->
+
+  <div id="mainPage" class="page">
+
+    <h2>اخوات لآخر العمر يلا ♥</h2>
+
+    <div class="slider">
+
+      <button class="nav" onclick="prevImage()">❮</button>
+
+      <img id="sliderImage" src="Salah1.jpg">
+
+      <button class="nav" onclick="nextImage()">❯</button>
+
+    </div>
+
+    <audio controls autoplay loop>
+
+      <source src="Salah.m4a" type="audio/mp4">
+
+    </audio>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

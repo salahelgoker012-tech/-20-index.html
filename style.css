@@ -1,0 +1,142 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  overflow:hidden;
+}
+
+/* الصفحات */
+
+.page{
+  width:100%;
+  height:100vh;
+  display:none;
+
+  justify-content:center;
+  align-items:center;
+
+  flex-direction:column;
+}
+
+.active{
+  display:flex;
+}
+
+/* الصفحة الاولى */
+
+#loginPage{
+  background:white;
+}
+
+#loginPage h1{
+  font-size:40px;
+  margin-bottom:25px;
+}
+
+#loginPage input{
+
+  width:300px;
+
+  padding:15px;
+
+  border-radius:12px;
+
+  border:2px solid #ccc;
+
+  font-size:18px;
+
+  text-align:center;
+}
+
+#loginPage button{
+
+  margin-top:20px;
+
+  padding:12px 30px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:black;
+
+  color:white;
+
+  font-size:18px;
+
+  cursor:pointer;
+}
+
+/* الصفحة التانية */
+
+#mainPage{
+
+  background:#1a002e;
+
+  color:white;
+}
+
+#mainPage h2{
+
+  font-size:55px;
+
+  margin-bottom:40px;
+
+  text-align:center;
+}
+
+/* الصور */
+
+.slider{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:20px;
+}
+
+.slider img{
+
+  width:350px;
+
+  height:450px;
+
+  object-fit:cover;
+
+  border-radius:25px;
+
+  box-shadow:0 0 25px rgba(255,255,255,0.2);
+}
+
+.nav{
+
+  width:60px;
+
+  height:60px;
+
+  border:none;
+
+  border-radius:50%;
+
+  font-size:30px;
+
+  cursor:pointer;
+
+  background:white;
+
+  color:black;
+}
+
+/* الاغنية */
+
+audio{
+
+  margin-top:40px;
+
+  width:350px;
+}
